@@ -5,66 +5,54 @@
 	--background: #060720;
 }
 body {
-	background-color: var(--background);
+	background: var(--background) url('../assets/background.jpg') center / cover no-repeat;
 	color: var(--foreground);
 	font-family: system-ui, sans-serif;
-	background-image: url('../assets/background.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
 }
 
-.container {
-	margin-inline: auto;
-	padding-inline: 15px;
-	width: 100%;
-	max-width: 1230px;
-}
 /* ---------------------------------------------- */
-
-.app {
-}
 .keys {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	gap: 10px;
 	min-height: 100vh;
-	align-items: center;
-	justify-content: center;
 }
 .key {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 	gap: 10px;
-	background-color: rgba(0, 0, 0, 0.5);
-	padding: 10px 15px;
-	border-radius: 5px;
-	text-transform: uppercase;
 	transition: all 0.3s ease-in-out;
 	cursor: pointer;
-	border: 1px solid #000;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+	border: 1px solid #000;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px 15px;
+	text-transform: uppercase;
 
 	kbd {
 		font-size: 20px;
 	}
 }
 .key:hover {
+	border-color: gold;
 	background-color: rgba(0, 0, 0, 0.7);
 }
 .key:active {
 	transform: scale(0.9);
 }
 .sound {
-	font-size: 14px;
 	color: gold;
+	font-size: 14px;
 }
 
 .key.playing {
 	transform: scale(0.95);
-	background-color: rgba(255, 215, 0, 0.3);
-	border-color: gold;
-	box-shadow: 0 0 20px gold;
 	transition: all 0.1s ease-in-out;
+	box-shadow: 0 0 20px gold;
+	border-color: gold;
+	background-color: rgba(255, 215, 0, 0.3);
 }
