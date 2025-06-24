@@ -2,15 +2,15 @@
 
 const keys = document.querySelectorAll('.key')
 const pads = [
-	{ letter: 'A', sound: 'clap', src: '/assets/sounds/clap.wav' },
-	{ letter: 'S', sound: 'hihat', src: '/assets/sounds/hihat.wav' },
-	{ letter: 'D', sound: 'kick', src: '/assets/sounds/kick.wav' },
-	{ letter: 'Z', sound: 'openhat', src: '/assets/sounds/openhat.wav' },
-	{ letter: 'X', sound: 'boom', src: '/assets/sounds/boom.wav' },
-	{ letter: 'C', sound: 'ride', src: '/assets/sounds/ride.wav' },
-	{ letter: 'V', sound: 'snare', src: '/assets/sounds/snare.wav' },
-	{ letter: 'G', sound: 'tom', src: '/assets/sounds/tom.wav' },
-	{ letter: 'H', sound: 'tink', src: '/assets/sounds/tink.wav' },
+	{ letter: 'A', src: '/assets/sounds/clap.wav' },
+	{ letter: 'S', src: '/assets/sounds/hihat.wav' },
+	{ letter: 'D', src: '/assets/sounds/kick.wav' },
+	{ letter: 'Z', src: '/assets/sounds/openhat.wav' },
+	{ letter: 'X', src: '/assets/sounds/boom.wav' },
+	{ letter: 'C', src: '/assets/sounds/ride.wav' },
+	{ letter: 'V', src: '/assets/sounds/snare.wav' },
+	{ letter: 'G', src: '/assets/sounds/tom.wav' },
+	{ letter: 'H', src: '/assets/sounds/tink.wav' },
 ]
 
 // Создаем объект для хранения аудио элементов
@@ -42,8 +42,6 @@ document.addEventListener('keydown', e => {
 	const letter = e.key.toUpperCase()
 	playSound(letter)
 })
-
-
 
 // Обработчик клика по кнопкам
 keys.forEach(key => {
