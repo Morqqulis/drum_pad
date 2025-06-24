@@ -2,15 +2,15 @@
 
 const keys = document.querySelectorAll('.key')
 const pads = [
-	{ letter: 'A', src: '/sounds/clap.wav' },
-	{ letter: 'S', src: '/sounds/hihat.wav' },
-	{ letter: 'D', src: '/sounds/kick.wav' },
-	{ letter: 'Z', src: '/sounds/openhat.wav' },
-	{ letter: 'X', src: '/sounds/boom.wav' },
-	{ letter: 'C', src: '/sounds/ride.wav' },
-	{ letter: 'V', src: '/sounds/snare.wav' },
-	{ letter: 'G', src: '/sounds/tom.wav' },
-	{ letter: 'H', src: '/sounds/tink.wav' },
+	{ letter: 'A', src: './sounds/clap.wav' },
+	{ letter: 'S', src: './sounds/hihat.wav' },
+	{ letter: 'D', src: './sounds/kick.wav' },
+	{ letter: 'Z', src: './sounds/openhat.wav' },
+	{ letter: 'X', src: './sounds/boom.wav' },
+	{ letter: 'C', src: './sounds/ride.wav' },
+	{ letter: 'V', src: './sounds/snare.wav' },
+	{ letter: 'G', src: './sounds/tom.wav' },
+	{ letter: 'H', src: './sounds/tink.wav' },
 ]
 
 // Создаем объект для хранения аудио элементов
